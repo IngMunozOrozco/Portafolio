@@ -1,0 +1,249 @@
+
+/*.slider-container{
+    width: 90%;
+
+    margin: auto;
+    position: relative;
+    height: 568px;
+
+
+
+}*/
+
+.slider-items{
+    height: 26vw;
+    margin: 50px 0 0;
+    position: relative;
+    list-style-type: none;
+
+}
+
+.slider-items li{
+    position: absolute;
+    width: 10%;
+    height: 50%;
+    top: 2%;
+    left: 50%;
+    cursor: pointer;
+    z-index: 1;
+    transition: transform 1.4s cubic-bezier(0.19, 1, 0.22, 1);
+  
+ 
+   
+}
+
+.slider-items li .hover-message {
+    position: absolute;
+    bottom: 150px; /* Ajusta la distancia desde la parte inferior del ícono */
+    left: 40%; /* Centra el mensaje horizontalmente */
+    transform: translateX(-50%);
+    background-color: #339CFF;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+
+
+}
+
+
+.slider-container .slider-items{
+    top: -50px;
+} 
+
+.slider-container  .slider-nav{
+    top: 120px;
+}
+.slider-container .slider-dots{
+    top: 470px;
+    left: -38px;
+}
+
+.slider-container img{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    background: #fff;
+    color: #fff;
+    padding: 10px 22px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 25px;
+    pointer-events: none;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+
+  }
+  
+
+
+
+.slider-items li img{
+    width: 80%;
+    height: 80px;
+    transform: scale(1.3) rotate(25deg);
+    transition: 0.25;
+    margin-top: 55%;
+
+}
+
+.slider-items li::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    left: 38%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    background-position: 50% 85%;
+    background-size: 100% auto;
+    transition: 0.3s;
+}
+
+.slider-items li::after{
+    width: 90%;
+}
+
+.slider-items li.item-1{
+    z-index: 2;
+    transform: translateX(-50%) scale(1.3) translate3d(0%,65%,0);
+}
+
+.slider-items li.item-1 img{
+    transform: scale(1.6) rotate(1deg);
+}
+
+.slider-items li.item-2{
+    z-index: 1;
+    transform: translateX(-160%) scale(0.7) translate3d(400%,40%,0);
+}
+
+.slider-items li.item-5{
+    z-index: 1;
+    transform: translateX(-160%) scale(0.7) translate3d(-100%,40%,0);
+}
+
+
+.slider-items li.item-3{
+    z-index: 0;
+    transform: translateX(-30%) scale(0.5) translate3d(220%,-31%,0);
+}
+
+.slider-items li.item-4{
+    z-index: 0;
+    transform: translateX(-90%) scale(0.5) translate3d(-180%,-31%,0);
+}
+
+.slider-items li.item-6{
+    z-index: 1;
+    transform: translateX(-20%) scale(0.3) translate3d(-240%,-109%,0);
+}
+
+
+.slider-items li.item-7{
+    z-index: 1;
+    transform: translateX(-10%) scale(0.3) translate3d(-10%,-109%,0);
+}
+
+
+
+.slider-nav{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 750px;
+    border-bottom: none;
+    border-left: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1;
+   
+}
+
+.slider-nav.next{
+    right: -2000%;
+    transform: rotate(45deg);
+    border-top: 2px solid #339CFF;
+    border-right: 2px solid #339CFF;
+ 
+}
+
+.slider-nav.prev{
+    left: 74%;
+    transform: rotate(220deg);
+    border-top: 2px solid #339CFF;
+    border-right: 2px solid #339CFF;
+}
+
+.slider-dots{
+    position: absolute;
+    bottom: -195%;
+    width: 100%;
+    z-index: 3;
+    left: -35px;
+}
+
+.slider-dots ul{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.slider-dots ul li{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+.slider-dots ul li.active{
+    background-color: #339CFF;
+}
+
+
+
+ 
+@media (max-width: 576px) {
+    .slider-container {
+      max-width: 200px;
+    }
+
+    .slider-dots, .slider-nav.prev, .slider-nav.next {
+        display: none;
+    }
+ 
+  }
+
+  .box2{
+    color: #fff;
+    margin-top: 10px;
+    width: 150px;
+    margin-left: 700px;
+    
+    
+  }
+
+  .box2 button{
+    width: 120px;
+    height: 50px;
+    background-color: #339CFF;
+ 
+  }
+
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #5ea2eb;
+    border-color: #5ea2eb;
+  }
+
+  @media (max-width: 576px){
+    .box2{
+      
+        margin-left: 0;
+    }
+  }
