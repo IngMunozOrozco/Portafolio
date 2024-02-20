@@ -79,7 +79,7 @@ function toggleIdioma() {
         document.getElementById('donwl2').style.display = 'none';
     } else {
         document.getElementById('donwl').style.display = 'inline-block';
-        document.getElementsById('btneng')[0].style.display = 'none';
+        document.getElementsByClassName('btneng')[0].style.display = 'none';
         document.getElementsById('donwl2')[0].style.display = 'inline-block';
         document.getElementsByClassName('btn3')[0].style.display = 'none';
     }
