@@ -78,13 +78,21 @@ function toggleIdioma() {
     if (idiomaActual === 'en') {
         document.getElementById('donwl').style.display = 'none';
         document.getElementsByClassName('btneng')[0].style.display = 'inline-block';
+
         document.getElementsByClassName('btn3')[0].style.display = 'inline-block';
         document.getElementById('donwl2').style.display = 'none';
+
+        document.getElementsByClassName('butCont2')[0].style.display = 'inline-block';
+        document.getElementById('butCont').style.display = 'none';
     } else {
         document.getElementById('donwl').style.display = 'inline-block';
         document.getElementsByClassName('btneng')[0].style.display = 'none';
+
         document.getElementById('donwl2').style.display = 'inline-block';
         document.getElementsByClassName('btn3')[0].style.display = 'none';
+
+        document.getElementsByClassName('butCont')[0].style.display = 'inline-block';
+        document.getElementById('butCont2').style.display = 'none';
     }
 }
 
