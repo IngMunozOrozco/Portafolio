@@ -11583,10 +11583,15 @@ pre .code {
     margin: auto;
   }
   .header .header-content {
-    padding: 20px;
+    padding: 10px;
+
   }
   .header .header-content .header-mono {
     letter-spacing: 2px;
+  }
+
+  .header .header-content .h1 {
+ 
   }
 }
 
@@ -11753,4 +11758,8 @@ pre .code {
 
 .container h3{
   text-align: center;
+}
+
+.container-fluid .container .text-center h5{
+  text-align: justify;
 }

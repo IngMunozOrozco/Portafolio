@@ -18,11 +18,12 @@ const textos = {
         poke: "Muestra todos los Pokemon existentes por orden y tipo.",
         come: "Modelo de Ecommerce sencillo con carrito de compras.",
         envia: "Enviame un mensaje",
-        nom: "Nombre",
-        mensaje: "Mensaje",
+        nom: "Nombre *",
+        mensaje: "Mensaje *",
         webs: "Redes",
         sky: "Usuario : live:eduardo9j",
-        add: "Dirección"
+        add: "Dirección: Popayán, Colombia",
+        asun: "Asunto *"
 
     },
     en: {
@@ -41,11 +42,13 @@ const textos = {
         poke: "Shows all existing Pokemon by order and type.",
         come: "Simple Ecommerce model with shopping cart.",
         envia: "Send me a message",
-        nom: "Name",
-        mensaje: "Message",
+        nom: "Name *",
+        mensaje: "Message *",
         webs: "Get in touch",
         sky: "User : eduardo9j",
-        add: "Address: Popayán, Colombia"
+        add: "Address: Popayán, Colombia",
+        asun:"Subject *",
+        sent: "Send"
     }
 };
 
@@ -55,7 +58,7 @@ function cambiarIdioma(idioma) {
     elementos.forEach(elemento => {
         const id = elemento.getAttribute('id');
         if (textos[idioma][id]) {
-            if (elemento.id === 'nom' || elemento.tagName === 'mensaje') {
+            if (elemento.id === 'nom' || elemento.id === 'mensaje' || elemento.id === 'asun') {
                 elemento.placeholder = textos[idioma][id];
             } else {
                 elemento.textContent = textos[idioma][id];
@@ -80,7 +83,7 @@ function toggleIdioma() {
     } else {
         document.getElementById('donwl').style.display = 'inline-block';
         document.getElementsByClassName('btneng')[0].style.display = 'none';
-        document.getElementsById('donwl2')[0].style.display = 'inline-block';
+        document.getElementById('donwl2').style.display = 'inline-block';
         document.getElementsByClassName('btn3')[0].style.display = 'none';
     }
 }

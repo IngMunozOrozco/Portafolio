@@ -20,21 +20,21 @@
                 <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/jes%C3%BAs-eduardo-m-537027118/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
                 <li class="social-item"><a class="social-link text-light" href="https://github.com/IngMunozOrozco"><i class="ti-github" aria-hidden="true"></i></a></li>
                 <ul class="box2">
-                    <button class="btn_box  btn-rounded" id="toggleButton"  onclick="toggleIdioma()">English</button>
+                    <button class="btn_box  btn-rounded" id="toggleButton"  onclick="toggleIdioma() "><i class="ti-user pr-2" ></i>English</button>
                     
                 </ul>
             </ul>  
 
             
             <div class="header-content">
-                <h4 class="header-subtitle" id="hola" >Hola, yo soy</h4>
+                <h4 class="header-subtitle" id="hola" >Hola, yo soy</h4><br>
                 <h1 class="header-title" >Eduardo Muñoz</h1>
                 <h6 class="header-subtitle" id="dev">Desarrollador web full stack</h6>
                
                 <a href="https://drive.google.com/file/d/1xNUc8NZ23NxzejshNLXY3vHPEIk1nVGP/view?usp=sharing" target="_blank" >
                     <div  class="btn btn-primary btn-rounded" id="donwl" ><i class="ti-printer pr-2" ></i>Descargar CV</div>    
                </a>
-               <a href="https://www.youtube.com/watch?v=Ihvv5uVZnIY" target="_blank" >
+               <a href="https://drive.google.com/file/d/1zLbWFRPjWzLxsS2wIL7Z2eIVL3CU31jI/view?usp=sharing" target="_blank" >
                    <div class="btneng btn-primary btn-rounded"  id="btneng"><i class="ti-printer pr-2"></i>Download CV</div>
 
               </a>
@@ -96,7 +96,7 @@
                 </button>
 
                 <button class="btn3 btn-outline-danger" >
-                    <a href="https://www.youtube.com/watch?v=Ihvv5uVZnIY" target="_blank" id="btneng2" >
+                    <a href="https://drive.google.com/file/d/1zLbWFRPjWzLxsS2wIL7Z2eIVL3CU31jI/view?usp=sharing" target="_blank" id="btneng2" >
                         <i class="icon-down-circled2"></i>Download CV
      
                    </a>
@@ -279,25 +279,30 @@
                 <div class="col-lg-8">
                     <div class="contact-form-card">
                         <h4 class="contact-title" id="envia">Enviame un mensaje</h4>
-                        <form id="form" action="">
+                        <form id="form" action="" class="form">
                             <div class="form-group">
-                                <input class="form-control" type="text" id="nom" placeholder="Nombre *" required>
+                                <input class="form-control" type="text" id="nom" name="nom" placeholder="Nombre *" required>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="email" id="em" placeholder="Email *" required>
+                                <input class="form-control" type="email" id="em" name="em" placeholder="Email *" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" id="mensaje" placeholder="Mensaje *" rows="7" required></textarea>
+                                <input class="form-control" type="text" id="asun" name="asun" placeholder="Asunto *" required>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control btn btn-primary" id="envia">Enviar mensaje</button>
+                                <textarea class="form-control" type="text" id="mensaje" name="mensaje" placeholder="Mensaje *" rows="7" required></textarea>
+                            </div>
+                
+                    
+                            <div class="form-group">
+                                <button type="submit" class="form-control btn btn-primary" id="sent">Enviar mensaje</button>
                             </div>
                         </form>
+                        
                     </div>
                 </div>
             
-
-
+        
                 <div class="col-lg-4">
                     <div class="contact-info-card">
                         <h4 class="contact-title" id="webs">Redes</h4>
