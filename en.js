@@ -9,7 +9,7 @@ const textos = {
         cont: "Contacto",
         inic: "Inicio",
         acer: "Acerca de mí",
-        hab: "Hailidades",
+        hab: "Habilidades",
         port: "Portafolio",
         pro1: "Como ingeniero de sistemas y tecnólogo en análisis y desarrollo de sistemas de información cuento con conocimientos en el diseño, implementación y gestión de sistemas informáticos.",
         pro2: "Poseo habilidades en el desarrollo de sitios web, aplicaciones móviles y un amplio dominio de diversos lenguajes de programación. Además, tengo experiencia en el manejo de bases de datos, lo que me permite ofrecer soluciones integrales en el ámbito de la tecnología de la información.",

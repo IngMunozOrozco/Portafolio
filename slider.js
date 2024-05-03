@@ -11,7 +11,7 @@ const messages = [
     'Experiencia  1 año', //Html
     'Experiencia  1 año', //Css
     'Experiencia  5 meses', //Js
-    'Experiencia  5 meses',    //React
+    'Experiencia  5 meses',  //React
     'Experiencia  6 meses',  //Node
     'Experiencia  6 meses', //github
     'Experiencia  5 meses' //php
