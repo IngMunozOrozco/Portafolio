@@ -22,7 +22,7 @@ const textos = {
         mensaje: "Mensaje *",
         webs: "Redes",
         sky: "Usuario : live:eduardo9j",
-        add: "Dirección: Popayán, Colombia",
+        add: "Dirección: Cali, Colombia",
         asun: "Asunto *",
         deve: "Desarrollado por Jesus Eduardo Muñoz Orozco @todos los derechos reservados"
 
@@ -47,7 +47,7 @@ const textos = {
         mensaje: "Message *",
         webs: "Get in touch",
         sky: "User : eduardo9j",
-        add: "Address: Popayán, Colombia",
+        add: "Address: Cali, Colombia",
         asun:"Subject *",
         sent: "Send",
         deve: "Developed by Jesús Eduardo Muñoz Orozco @all rights reserved"
